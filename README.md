@@ -1,9 +1,21 @@
 # Blue-Teamers-Guide
-Curated list of useful links and resources for study or work related to blue teaming
+Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
 
 ## OWASP Top 10
+Good to know when trying to understand web attacks. 
+- [OWASP](https://owasp.org/www-project-top-ten/) - Document listing top 10 web app risks that are updated every few years. De facto standard for web app security.
+- [OWASP TryHackMe](https://tryhackme.com/room/owasptop102021) - OWASP Top 10 in theory and practical exercises. Free.
+- [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop) - Juice shop website to test OWASP skills. Free
+- [OWASP GOAT](https://tryhackme.com/room/webgoat) - Another similar site as the juice shop. Free
+- [Damn Vulnerable Web App](https://github.com/digininja/DVWA) - Similar as the others. 
 
+## Living off the lands
+Legitimate tools/sites/binaries that are abused by attackers as they can easily evade traditional detection. You could threat hunt these techniques/IOCs in your environment.
+- [LOLBAS](https://lolbas-project.github.io) - Window binaries
+- [GTFO](https://gtfobins.github.io/#) - UNIX binaries
+- [LOLDRIVERS](https://www.loldrivers.io) - Window drivers
+- [LOTS](https://lots-project.com) - Websites used for data exfil, C2, hosting of attacker tools, phishing, etc.
 
 ## Log analysis
 
