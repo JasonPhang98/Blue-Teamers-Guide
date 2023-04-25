@@ -1,7 +1,6 @@
 # Blue-Teamers-Guide
 Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
-
 ## Security Frameworks
 - [MITRE framework](https://attack.mitre.org)
    - [Mitre Attack Navigator](https://mitre-attack.github.io/attack-navigator/) 
@@ -159,12 +158,52 @@ XOR
 
 ## Blogs to read for blue teamers
 - [DFIR Report](https://thedfirreport.com) - Complete reports on various malwares. Consist of full timeline of attacks, IOCs, MITRE stages of attacks, Sigma, etc.
-- 
+- [SOC Investigation](https://www.socinvestigation.com) - Good all-rounder blog for SOC analysts.
+- [SANS Internet Storm Center](https://isc.sans.edu) - Diaries especially from Didier Stevens are good to learn about new malware analysis tools and techniques.
+- [Didier Stevens Blog](https://blog.didierstevens.com) - Didier Stevens official blog related to malware analysis tools.
+
+## VM/Labs/Dataset to play with for blue teamers
+- [Splunk Attack Range](https://github.com/splunk/attack_range) - Developed by Splunk Threat Research Team. Allows simulation of Atomics Red Team and Caldera to generate real data. You can then hunt those TTPs in Splunk.
+- [Detection Lab](https://github.com/clong/DetectionLab) - Creates a simulated environment where you can play around with attacks and detection. 
+- [Detection Lab ELK](https://github.com/cyberdefenders/DetectionLabELK) - Similar detection lab to Splunk but this is ELK based. 
+- [HELK](https://github.com/Cyb3rWard0g/HELK) - Threat hunting platform for ELK.
+- [Mordor](https://github.com/UraSecTeam/mordor) - Provides simulated adverserial TTPs in json format
+- [SecRepo](https://www.secrepo.com) - Excellent repo for beginner SOC analyst who wish to understand how a log format looks like. Contains various type of log samples such as FTP, DNS, DHCP, Zeek, etc. 
+   - How to learn with logs from Sec Repo
+   
+   First, download any sample log of your choice from Sec Repo. In this case, I am downloading the squid access logs. 
+   ![image](https://user-images.githubusercontent.com/24632042/234297961-d20ad2ca-4ee9-47f2-ba2a-541ca64d43cb.png)
+   
+   You can download Splunk Enterprise locally into your machine from [here](https://www.splunk.com/en_us/download.html).
+   
+   After setting up Splunk locally, head to your main dashboard and click on Add Data.
+   ![image](https://user-images.githubusercontent.com/24632042/234298760-7fb6c623-16af-4b57-8f85-e6ce5adaaa18.png)
+
+   Click on upload as in the screenshot below. 
+   ![image](https://user-images.githubusercontent.com/24632042/234299048-2b5fefec-c8f3-4893-9d3b-1e33ff5b5295.png)
+
+   You could either upload directly as the zip file but it will take a longer time to process the data. Hence, it is better to unzip it. Once you are done,   click on next till you reach the save sourcetype part. Here, you can save as any name of your choice. Once you are done, click on submit. Before you click start searching, click on extract fields. 
+   
+   ![image](https://user-images.githubusercontent.com/24632042/234301271-01c6899f-3d29-41cb-9ee7-fdc87747af72.png)
+   
+   Click on any sample log to extract the fields.
+   ![image](https://user-images.githubusercontent.com/24632042/234302451-151c0e71-2306-4bb9-bcf1-7524645c53c6.png)
+   
+   Click on regular expression. 
+   ![image](https://user-images.githubusercontent.com/24632042/234303511-e705a68d-8cd4-49a7-93f8-7a21a83016bb.png)
+
+   Over here, we can highlight whichever field we want and classify it as a specific field. This would make searching in Splunk easier. Since these are weblogs, I would want to have fields for soure IP, http response code, destination IP, and url accessed.
+   
+   ![image](https://user-images.githubusercontent.com/24632042/234304410-a6c8c329-97c0-4aa3-8a61-b5b5f2822dc4.png)
+   
+   Once we are done, we can view the fields in our search. Here, we can group the source IP and URLs found in the web logs according to their response codes. This is a basic way on how to use the dataset from sec repo. You would have to explore more with regex to have a more refined result.
+   ![image](https://user-images.githubusercontent.com/24632042/234306103-6ddbdcbf-524c-4c3a-b996-86832931b1d9.png)   
 
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
 - [TryHackMe](https://tryhackme.com) - Blue team/SOC Analyst path is good for beginners. Have both free and paid plans. 
 - [Cyberdefenders](https://cyberdefenders.org) - Gamified blue team platform. Requires you to download the labs/tools. Free.
+- [LetsDefend](https://letsdefend.io) - Simulated SOC environment where players assume the role of SOC analysts. Have both free and paid plans. 
 - [Rangeforce](https://go.rangeforce.com/community-edition-registration) - Have a free community version to explore
 - [Immersive Labs](https://www.immersivelabs.com/platform/blue-team-training-cyberpro/) - Another good platform but not sure if they are accepting new registrations
 - Splunk Bots - The best CTF to improve Splunking skills. Free
