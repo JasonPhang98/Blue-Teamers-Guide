@@ -134,6 +134,18 @@ XOR
 - [Quick Way to Deobfuscate Powershell](https://securityliterate.com/malware-analysis-in-5-minutes-deobfuscating-powershell-scripts/)
 - [Powershell Deobfuscation Using ScriptBlock Logging](https://www.securityinbits.com/malware-analysis/deobfuscate-powershell-using-powershell-logging/)
 
+## Cyberchef
+- [Cyberchef Github page](https://gchq.github.io/CyberChef/)
+- [Cyberchef from zero to hero slides](https://www.osdfcon.org/presentations/2019/Jonathan-Glass_Cybersecurity-Zero-to-Hero-With-CyberChef.pdf)
+- [List of cyberchef recipes](https://github.com/4n6strider/cyber-chef-recipes) - To use the recipes, simply click on load recipes in Cyberchef and paste the recipes from there into the load recipes section. 
+- [Another list of cyberchef recipes](https://github.com/mattnotmax/cyberchef-recipes)
+
+ ![image](https://user-images.githubusercontent.com/24632042/234255052-e9fcc516-8ffb-40a2-84de-a1ca89f3a211.png)
+ 
+ ![image](https://user-images.githubusercontent.com/24632042/234255849-c6894c24-d2af-430b-b2b6-5d52e4cbf5ad.png)
+
+![image](https://user-images.githubusercontent.com/24632042/234256502-f71b88e7-352b-4fd7-81c2-93b2d18b7ac0.png)
+
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
 - [TryHackMe](https://tryhackme.com) - Blue team/SOC Analyst path is good for beginners. Have both free and paid plans. 
