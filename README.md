@@ -9,6 +9,19 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Diamond Model](https://www.socinvestigation.com/threat-intelligence-diamond-model-of-intrusion-analysis/) 
 
 ## SIEM
+### Splunk
+- [What is Splunk?](https://www.guru99.com/splunk-tutorial.html)
+- [How to search in Splunk](https://www.splunk.com/en_us/resources/videos/basic-search-in-splunk-enterprise.html?locale=en_us) - Video tutorial for searching in Splunk
+- [Official Splunk search tutorial](https://docs.splunk.com/Documentation/Splunk/9.0.4/SearchTutorial/WelcometotheSearchTutorial) - Official Splunk documentation from searching to creating dashboards.
+- [Splunk Basic Queries](https://tryhackme.com/room/splunk101) - Learn about Splunk interface. Paid room. 
+- [Splunk education](https://education.splunk.com/catalog) - Use case for many types of attacks such as brute force, data exfil, etc. Also has UBA content. Free to signup for most content. 
+- [Splunk TryHackMe Exercises](https://tryhackme.com/hacktivities?tab=search&page=1&free=all&order=most-popular&difficulty=all&type=all&searchTxt=splunk) - Mixture of both free and paid. Range in difficulty.
+- [Splunk BOTS V1-V3](https://cyberdefenders.org/search/labs/?q=splunk)
+- [Splunk UBA Demo](https://www.youtube.com/watch?v=z8NWStWFg2Y)
+
+### ELK Kibana
+
+### QRadar
 
 ## Network traffic analysis 
 ### Tools
@@ -49,6 +62,10 @@ Curated list of useful links and resources for study or work related to blue tea
 - [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop) - Juice shop website to test OWASP skills. Free
 - [OWASP GOAT](https://tryhackme.com/room/webgoat) - Another similar site as the juice shop. Free
 - [Damn Vulnerable Web App](https://github.com/digininja/DVWA) - Similar as the others. 
+
+## Google Dorks
+- [Cheatsheet](https://cdn-cybersecurity.att.com/blog-content/GoogleHackingCheatSheet.pdf)
+- [Exploit DB](https://www.exploit-db.com/google-hacking-database) - As a blue teamer, you could also use this site to check on vulnerabilites on your organization.
 
 ## Living off the lands
 Legitimate tools/sites/binaries that are abused by attackers as they can easily evade traditional detection. You could threat hunt these techniques/IOCs in your environment.
