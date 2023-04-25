@@ -1,6 +1,9 @@
 # Blue-Teamers-Guide
 Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
+
+
+
 ## Network traffic analysis 
 ### Tools
 - [Wireshark](https://www.wireshark.org) - Network protocol analyzer. You should know some basic queries on searching in Wireshark
@@ -29,6 +32,7 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Urlscan](https://urlscan.io) - Easily scan for malicious or suspicious URL and have a realtime view of the site
 - [Wayback Machine](https://archive.org/web/) - Search for archived pages of a website. 
 - [Malware Bazaar](https://bazaar.abuse.ch) - Database with various types of malware.
+- [Alienvault](https://otx.alienvault.com/browse/global/pulses?include_inactive=0&sort=-modified&page=1&limit=10) - Search for IOCs from malware families
 - [Sputnik Browser Extension](https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd?hl=en) - You can download this chrome browser extension for free and it will allow you to easily perform OSINT lookup without needing to search for the site externally. 
 
 ## OWASP Top 10
@@ -48,24 +52,28 @@ Legitimate tools/sites/binaries that are abused by attackers as they can easily 
 ## Log analysis
 
 ## Sigma
-Sigma is equivalent to Yara and Snort for malware and traffic analysis detection respectively. 
-- Learning resources
-1. 
+Sigma is equivalent to Yara and Snort for malware and traffic analysis detection respectively. This is their official [Github](https://github.com/SigmaHQ/sigma) page.
 
-- Tools
-1. [detection.fyi](https://detection.fyi) - Lists down sigma rules for many types of attacks. Useful tool to threat hunt according to MITRE framework. 
-2. [uncoder.io](https://uncoder.io) - Allows you to copy the sigma rules from detection.fyi or any other sites and easily generate the necessary syntax according to your SIEM of preference. 
+### Learning resources
+- [SOC Prime](https://socprime.com/blog/sigma-rules-the-beginners-guide/) - Guide to sigma basics
+- [Basics of Writing Sigma Rules](https://www.nextron-systems.com/2018/02/10/write-sigma-rules/) 
+- [Sigma](https://tryhackme.com/room/sigma) - Paid room to learn basics on Sigma 
+- [Sighunt](https://tryhackme.com/room/sighunt) - Free room to practice creating Sigma rules
+
+### Tools
+-  [detection.fyi](https://detection.fyi) - Lists down sigma rules for many types of attacks. Useful tool to threat hunt according to MITRE framework. 
+- [uncoder.io](https://uncoder.io) - Allows you to copy the sigma rules from detection.fyi or any other sites and easily generate the necessary syntax according to your SIEM of preference. 
 
 
 ## Powershell deobfuscation 
 Powershell deobfuscation is a necessary technique that should be acquired by SOC analysts. Of course, you might not need to go into very deep levels of reversing heavy obfuscated scripts. But you should be able to deobfuscate with base 64 decode if you come across a script that ends with ==.
 
-- Learning resources 
+### Learning resources 
 
-- Tools
-1. [PSDecode](https://github.com/R3MRUM/PSDecode) - Will break down powershell deobfuscation in stages and extracts the IOC
-2. [Power Decode](https://github.com/Malandrone/PowerDecode) - Perform deobfuscation alongside identifying dynamic malware analysis activities
-3. [Cyberchef](https://gchq.github.io/CyberChef/) - One stop centre for virtually everything. Some basic recipes for deobfuscating Powershell are:
+### Tools
+- [PSDecode](https://github.com/R3MRUM/PSDecode) - Will break down powershell deobfuscation in stages and extracts the IOC
+- [Power Decode](https://github.com/Malandrone/PowerDecode) - Perform deobfuscation alongside identifying dynamic malware analysis activities
+- [Cyberchef](https://gchq.github.io/CyberChef/) - One stop centre for virtually everything. Some basic recipes for deobfuscating Powershell are:
 ```
 From Base 64
 Gunzip
@@ -74,8 +82,8 @@ Remove Null Bytes
 Generic Beautify
 XOR 
 ```
-4. [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation) - Detect Powershell scripts that used Invoke-Obfuscation framework
-5. The easiest way would be to detonate the script in a sandbox. Before detonating, ideally you should have Sysmon logging installed on the sandbox. You should also enable scriptblock logging. Monitor for Event Code 4103 & 4104 for the unraveling of the powershell. 
+- [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation) - Detect Powershell scripts that used Invoke-Obfuscation framework
+- The easiest way would be to detonate the script in a sandbox. Before detonating, ideally you should have Sysmon logging installed on the sandbox. You should also enable scriptblock logging. Monitor for Event Code 4103 & 4104 for the unraveling of the powershell. 
 
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
