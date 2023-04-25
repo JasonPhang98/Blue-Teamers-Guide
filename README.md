@@ -29,6 +29,8 @@ Curated list of useful links and resources for study or work related to blue tea
 ### QRadar
 - [QRadar Lab and Exercise](https://cyberdefenders.org/blueteam-ctf-challenges/39#nav-questions)
 
+### Microsoft Sentinel
+
 ## Network traffic analysis 
 ### Tools
 - [Wireshark](https://www.wireshark.org) - Network protocol analyzer. You should know some basic queries on searching in Wireshark
@@ -106,6 +108,8 @@ Legitimate tools/sites/binaries that are abused by attackers as they can easily 
 - [TryHackMe Windows Forensics 1](https://tryhackme.com/room/windowsforensics1) - Usage of Kape and EZ Tools. Free room
 - [TryHackMe Windows Forensics 2](https://tryhackme.com/room/windowsforensics2) - Continuation of Window Forensics 1. Paid room
 - [TryHackMe Kape](https://tryhackme.com/room/kape) - Usage of Kape and EZ Tools. Free room
+
+## Malware Analysis
 
 ## Sigma
 Sigma is equivalent to Yara and Snort for malware and traffic analysis detection respectively. This is their official [Github](https://github.com/SigmaHQ/sigma) page.
