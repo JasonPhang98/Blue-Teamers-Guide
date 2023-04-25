@@ -8,9 +8,7 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 - [Diamond Model](https://www.socinvestigation.com/threat-intelligence-diamond-model-of-intrusion-analysis/) 
 
-## Log Analysis
-### Tools
-- 
+## SIEM
 
 ## Network traffic analysis 
 ### Tools
@@ -60,14 +58,20 @@ Legitimate tools/sites/binaries that are abused by attackers as they can easily 
 - [LOTS](https://lots-project.com) - Websites used for data exfil, C2, hosting of attacker tools, phishing, etc.
 
 ## Log analysis
-
 ### Tools
-- [jq](https://stedolan.github.io/jq/) - CLI for parsing json. 
-
+- [jq](https://stedolan.github.io/jq/) - CLI for parsing json
+- [Gigasheet](https://www.gigasheet.com) - Useful for vieweing large csv files
+- [Sysmon View](https://github.com/nshalabi/SysmonTools) - To track and visualize Sysmon logs
+- [EZ Tools](https://www.sans.org/tools/ez-tools/) - Great suite for all kinds of stuff 
 
 ### Learning resources
 - [jq basics](https://www.baeldung.com/linux/jq-command-json)
-
+- [Log Analysis - TryHackMe Tempest](https://tryhackme.com/room/tempestincident) - Full case investigation using Brim, Sysmon View, Window Event Viewer
+- [Apache Malicious Log Generator](https://github.com/McLabraid/Apache-Malicious-Log-Generator) - Good to practice Linux skills for analyzing web attacks in logs
+- [TryHackMe Juicy Details](https://tryhackme.com/room/juicydetails) - Log analysis for a compromised juice shop. Free room
+- [TryHackMe Windows Forensics 1](https://tryhackme.com/room/windowsforensics1) - Usage of Kape and EZ Tools. Free room
+- [TryHackMe Windows Forensics 2](https://tryhackme.com/room/windowsforensics2) - Continuation of Window Forensics 1. Paid room
+- [TryHackMe Kape](https://tryhackme.com/room/kape) - Usage of Kape and EZ Tools. Free room
 
 ## Sigma
 Sigma is equivalent to Yara and Snort for malware and traffic analysis detection respectively. This is their official [Github](https://github.com/SigmaHQ/sigma) page.
