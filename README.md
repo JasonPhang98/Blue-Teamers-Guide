@@ -74,6 +74,15 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Cheatsheet](https://cdn-cybersecurity.att.com/blog-content/GoogleHackingCheatSheet.pdf)
 - [Exploit DB](https://www.exploit-db.com/google-hacking-database) - As a blue teamer, you could also use this site to check on vulnerabilites on your organization.
 
+## Virus Total
+- You can upload hashes, IP addresses, URLs or domains to it. 
+- Avoid uploading directly the executable or file to Virus Total. Attackers tend to monitor online sandboxes for the detection of their malicious executables or scripts. Once it is detected, they would change their TTPs rendering the past detected artefacts useless. 
+- If you do not have an offline sandbox like Cuckoo, you can grab the hash of the artefact and upload it to Virus Total. 
+```
+Get-FileHash test.exe
+```
+- 
+
 ## Living off the lands
 Legitimate tools/sites/binaries that are abused by attackers as they can easily evade traditional detection. You could threat hunt these techniques/IOCs in your environment.
 - [LOLBAS](https://lolbas-project.github.io) - Window binaries
@@ -144,7 +153,7 @@ XOR
  
  ![image](https://user-images.githubusercontent.com/24632042/234255849-c6894c24-d2af-430b-b2b6-5d52e4cbf5ad.png)
 
-![image](https://user-images.githubusercontent.com/24632042/234256502-f71b88e7-352b-4fd7-81c2-93b2d18b7ac0.png)
+ ![image](https://user-images.githubusercontent.com/24632042/234256502-f71b88e7-352b-4fd7-81c2-93b2d18b7ac0.png)
 
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
@@ -160,3 +169,4 @@ XOR
    - Okta CTF - Hunt in Splunk with Okta dashboard
    - Corelight CTF - Hunt for Trickbot using Zeek and Suricata alerts together with Corelight CTI
    - Hunt for JA3  - Hunt for JA3 using Zeek
+- [Splunk Kringle Kon 2021](https://hhc21.bossworkshops.io/en-US/account/insecurelogin?username=user&password=kringlecon)
