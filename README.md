@@ -18,10 +18,17 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Splunk TryHackMe Exercises](https://tryhackme.com/hacktivities?tab=search&page=1&free=all&order=most-popular&difficulty=all&type=all&searchTxt=splunk) - Mixture of both free and paid. Range in difficulty.
 - [Splunk BOTS V1-V3](https://cyberdefenders.org/search/labs/?q=splunk)
 - [Splunk UBA Demo](https://www.youtube.com/watch?v=z8NWStWFg2Y)
+- [Splunk Threat Hunting Blog](https://www.splunk.com/en_us/blog/security/hunting-with-splunk-the-basics.html)
 
 ### ELK Kibana
+- [What is ELK Kibana?](https://www.guru99.com/elk-stack-tutorial.html)
+- [Kibana investigation exercises](https://cyberdefenders.org/search/labs/?q=elastic_1) - Free
+- [Kibana threat hunting](https://cyberdefenders.org/search/labs/?q=elk) - Free
+- [Try Hack Me Kibana](https://tryhackme.com/room/itsybitsy) - Paid room
+- [Threat Hunting with ELK Compilation](https://www.youtube.com/playlist?list=PLeLcvrwLe184BoWZhv6Cf2kbi-bKBeDBI) - List of YouTube videos by Packt for threat hunting in ELK 
 
 ### QRadar
+- [QRadar Lab and Exercise](https://cyberdefenders.org/blueteam-ctf-challenges/39#nav-questions)
 
 ## Network traffic analysis 
 ### Tools
