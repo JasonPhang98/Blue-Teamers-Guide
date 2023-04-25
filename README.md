@@ -1,8 +1,23 @@
 # Blue-Teamers-Guide
 Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
+## Network traffic analysis 
+### Tools
+- [Wireshark](https://www.wireshark.org) - Network protocol analyzer. You should know some basic queries on searching in Wireshark
+- [Tshark](https://www.wireshark.org/docs/man-pages/tshark.html) - Command Line interface tool for Wireshark
+- [Brim](https://www.brimdata.io) - GUI based network analyzer. Can integrate together with Zeek. 
+- [Network Miner](https://www.netresec.com/?page=NetworkMiner) - Able to extract info quickly from pcap such as detailed host info, files, attachments, emails and passwords
+
+### Learning resources
+- [Malware Traffic Analysis](https://www.malware-traffic-analysis.net) - Source for pcap related to malware samples. Also provides artifacts from malware execution and EML samples in some cases. 
+- [Wireshark documentation](https://www.wireshark.org/docs/wsug_html_chunked/ChapterIntroduction.html) - Official wireshark documentation guide
+- [TryHackMe](https://tryhackme.com/paths) - TryHackMe's SOC Analyst path have great rooms for Wireshark, Brim and Network Miner. 
+- [Network Miner tutorial](https://hackersonlineclub.com/networkminer-for-network-forensic-analysis/) 
+- [Network Miner tutorial 2](https://thesecmaster.com/how-to-analyse-a-pcap-file-using-network-miner-a-network-forensic-analysis-tool-nfat/) 
+- [Tshark basics](https://blog.yarsalabs.com/tshark-basics-part1/) 
+- [Tshark tutorial](https://www.youtube.com/watch?v=w9mSPvacba0) 
+
 ## OSINT
-Learning how to use OSINT is crucial to obtain information about the attacker.
 - [AppAnyRun](https://app.any.run) - Interactive sandbox to hunt for malware
 - [Intezer](https://analyze.intezer.com) - Online sandbox to quickly triage malware. Similar to App AnyRun
 - [Virus Total](https://www.virustotal.com/gui/home/upload) - Easily upload the hash of the file or IP address to know whether it is malicious or not
@@ -10,10 +25,10 @@ Learning how to use OSINT is crucial to obtain information about the attacker.
 - [GreyNoise](https://viz.greynoise.io) - Hunt for CVEs, IP addresses, hashes, etc
 - [Urlscan](https://urlscan.io) - Easily scan for malicious or suspicious URL and have a realtime view of the site
 - [Wayback Machine](https://archive.org/web/) - Search for archived pages of a website. 
+- [Malware Bazaar](https://bazaar.abuse.ch) - Database with various types of malware.
 - [Sputnik Browser Extension](https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd?hl=en) - You can download this chrome browser extension for free and it will allow you to easily perform OSINT lookup without needing to search for the site externally. 
 
 ## OWASP Top 10
-Good to know when trying to understand web attacks. 
 - [OWASP](https://owasp.org/www-project-top-ten/) - Document listing top 10 web app risks that are updated every few years. De facto standard for web app security.
 - [OWASP TryHackMe](https://tryhackme.com/room/owasptop102021) - OWASP Top 10 in theory and practical exercises. Free.
 - [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop) - Juice shop website to test OWASP skills. Free
