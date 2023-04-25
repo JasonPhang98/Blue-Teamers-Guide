@@ -81,7 +81,9 @@ Curated list of useful links and resources for study or work related to blue tea
 ```
 Get-FileHash test.exe
 ```
-- 
+- Relations tab will tell you about the list of IP, domain and artefacts associated with the search. 
+- Checking the communities tab will sometimes tell you about the campaing/APT/malware/CVE associated with it.
+- If you are signed into Virus Total, you can view the graph summary whereby you can use the IOC from there for further threat hunting. 
 
 ## Living off the lands
 Legitimate tools/sites/binaries that are abused by attackers as they can easily evade traditional detection. You could threat hunt these techniques/IOCs in your environment.
@@ -154,6 +156,10 @@ XOR
  ![image](https://user-images.githubusercontent.com/24632042/234255849-c6894c24-d2af-430b-b2b6-5d52e4cbf5ad.png)
 
  ![image](https://user-images.githubusercontent.com/24632042/234256502-f71b88e7-352b-4fd7-81c2-93b2d18b7ac0.png)
+
+## Blogs to read for blue teamers
+- [DFIR Report](https://thedfirreport.com) - Complete reports on various malwares. Consist of full timeline of attacks, IOCs, MITRE stages of attacks, Sigma, etc.
+- 
 
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
