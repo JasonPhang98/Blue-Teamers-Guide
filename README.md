@@ -1,6 +1,16 @@
 # Blue-Teamers-Guide
 Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
+## OSINT
+Learning how to use OSINT is crucial to obtain information about the attacker.
+- [AppAnyRun](https://app.any.run) - Interactive sandbox to hunt for malware
+- [Intezer](https://analyze.intezer.com) - Online sandbox to quickly triage malware. Similar to App AnyRun
+- [Virus Total](https://www.virustotal.com/gui/home/upload) - Easily upload the hash of the file or IP address to know whether it is malicious or not
+- [AbuseIPDB](https://www.abuseipdb.com) - Check whether an IP is blacklisted
+- [GreyNoise](https://viz.greynoise.io) - Hunt for CVEs, IP addresses, hashes, etc
+- [Urlscan](https://urlscan.io) - Easily scan for malicious or suspicious URL and have a realtime view of the site
+- [Wayback Machine](https://archive.org/web/) - Search for archived pages of a website. 
+- [Sputnik Browser Extension](https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd?hl=en) - You can download this chrome browser extension for free and it will allow you to easily perform OSINT lookup without needing to search for the site externally. 
 
 ## OWASP Top 10
 Good to know when trying to understand web attacks. 
