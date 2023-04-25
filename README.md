@@ -2,7 +2,15 @@
 Curated list of useful links and resources for study or work related to blue teaming especially for newbies in the field.
 
 
+## Security Frameworks
+- [MITRE framework](https://attack.mitre.org)
+   - [Mitre Attack Navigator](https://mitre-attack.github.io/attack-navigator/) 
+- [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+- [Diamond Model](https://www.socinvestigation.com/threat-intelligence-diamond-model-of-intrusion-analysis/) 
 
+## Log Analysis
+### Tools
+- 
 
 ## Network traffic analysis 
 ### Tools
@@ -10,6 +18,7 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Tshark](https://www.wireshark.org/docs/man-pages/tshark.html) - Command Line interface tool for Wireshark
 - [Brim](https://www.brimdata.io) - GUI based network analyzer. Can integrate together with Zeek. 
 - [Network Miner](https://www.netresec.com/?page=NetworkMiner) - Able to extract info quickly from pcap such as detailed host info, files, attachments, emails and passwords
+- [JA3](https://github.com/salesforce/ja3) - SSL fingerprinting for network traffic. Produces a hash for a particular network for instance Trickbot execution. Since the hash will be unique to Trickbot's execution, this makes it easier to hunt for Trickbot execution across the environment.
 
 ### Learning resources
 - [Malware Traffic Analysis](https://www.malware-traffic-analysis.net) - Source for pcap related to malware samples. Also provides artifacts from malware execution and EML samples in some cases. 
@@ -22,6 +31,7 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Brim tutorial](https://kifarunix.com/analyze-network-traffic-using-brim-security/)
 - [Threat hunting with Brim](https://medium.com/brim-securitys-knowledge-funnel/five-elegant-brim-queries-to-threat-hunt-in-zeek-logs-and-packet-captures-30eec4c09933) 
 - [Network traffic hunting](https://sanog.org/resources/sanog36/SANOG36-Tutorial_ThreatHunting_Hassan.pdf)
+- [Understanding JA3](https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967/)
 
 ## OSINT
 - [AppAnyRun](https://app.any.run) - Interactive sandbox to hunt for malware
@@ -51,6 +61,14 @@ Legitimate tools/sites/binaries that are abused by attackers as they can easily 
 
 ## Log analysis
 
+### Tools
+- [jq](https://stedolan.github.io/jq/) - CLI for parsing json. 
+
+
+### Learning resources
+- [jq basics](https://www.baeldung.com/linux/jq-command-json)
+
+
 ## Sigma
 Sigma is equivalent to Yara and Snort for malware and traffic analysis detection respectively. This is their official [Github](https://github.com/SigmaHQ/sigma) page.
 
@@ -64,11 +82,8 @@ Sigma is equivalent to Yara and Snort for malware and traffic analysis detection
 -  [detection.fyi](https://detection.fyi) - Lists down sigma rules for many types of attacks. Useful tool to threat hunt according to MITRE framework. 
 - [uncoder.io](https://uncoder.io) - Allows you to copy the sigma rules from detection.fyi or any other sites and easily generate the necessary syntax according to your SIEM of preference. 
 
-
 ## Powershell deobfuscation 
 Powershell deobfuscation is a necessary technique that should be acquired by SOC analysts. Of course, you might not need to go into very deep levels of reversing heavy obfuscated scripts. But you should be able to deobfuscate with base 64 decode if you come across a script that ends with ==.
-
-### Learning resources 
 
 ### Tools
 - [PSDecode](https://github.com/R3MRUM/PSDecode) - Will break down powershell deobfuscation in stages and extracts the IOC
@@ -84,6 +99,12 @@ XOR
 ```
 - [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation) - Detect Powershell scripts that used Invoke-Obfuscation framework
 - The easiest way would be to detonate the script in a sandbox. Before detonating, ideally you should have Sysmon logging installed on the sandbox. You should also enable scriptblock logging. Monitor for Event Code 4103 & 4104 for the unraveling of the powershell. 
+
+### Learning resources 
+- [Deobfuscating Emotet Macro With Powershell Command](https://notes.netbytesec.com/2021/02/deobfuscating-emotet-macro-and.html)
+- [Deobfuscation using Cyberchef](https://medium.com/mii-cybersec/malicious-powershell-deobfuscation-using-cyberchef-dfb9faff29f)
+- [Quick Way to Deobfuscate Powershell](https://securityliterate.com/malware-analysis-in-5-minutes-deobfuscating-powershell-scripts/)
+- [Powershell Deobfuscation Using ScriptBlock Logging](https://www.securityinbits.com/malware-analysis/deobfuscate-powershell-using-powershell-logging/)
 
 ## List of blue teaming platforms to self study 
 - [Blue Team Labs Online](https://blueteamlabs.online) - Gamified blue team platform to train blue teaming skills in security operations, incident response, threat hunting, threat intelligence, reverses engineering and OSINT. Have both free and paid plans. 
