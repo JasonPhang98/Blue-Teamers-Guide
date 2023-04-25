@@ -16,6 +16,9 @@ Curated list of useful links and resources for study or work related to blue tea
 - [Network Miner tutorial 2](https://thesecmaster.com/how-to-analyse-a-pcap-file-using-network-miner-a-network-forensic-analysis-tool-nfat/) 
 - [Tshark basics](https://blog.yarsalabs.com/tshark-basics-part1/) 
 - [Tshark tutorial](https://www.youtube.com/watch?v=w9mSPvacba0) 
+- [Brim tutorial](https://kifarunix.com/analyze-network-traffic-using-brim-security/)
+- [Threat hunting with Brim](https://medium.com/brim-securitys-knowledge-funnel/five-elegant-brim-queries-to-threat-hunt-in-zeek-logs-and-packet-captures-30eec4c09933) 
+- [Network traffic hunting](https://sanog.org/resources/sanog36/SANOG36-Tutorial_ThreatHunting_Hassan.pdf)
 
 ## OSINT
 - [AppAnyRun](https://app.any.run) - Interactive sandbox to hunt for malware
